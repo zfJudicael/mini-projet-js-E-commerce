@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* Navbar */
+header{
+    background-color: #00aa7f;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: end;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    color: grey;
+    /*font-size: 18px;*/
+}
+
+#navbar li{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+#navbar li:hover{
+    background-color: #00ffbf;
+    /*padding: 25px;*/
+}
+
+
+#container{
+    width: 400px;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px rgb(177, 166, 166);
+}
+
+
+label{
+    width: 150px;
+    text-align: right;
+}
+
+label, input[type= text]{
+    display: inline-block;
+}
+
+input{
+    margin: 5px;
+}
+
+legend{
+    color: rgb(168, 54, 54);
+    margin: auto;
+}
+
+.switchSign{
+    display: flex;
+}
+
+#sign_inBTN, #sign_upBTN {
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#sign_inBTN {
+    border-top-left-radius: 8px;
+}
+
+#sing_upBTN {
+    border-top-right-radius: 8px;
+}
+
+form{
+    margin: 20px auto;
+    filter: inherit;
+}
+
+.sing_container{
+    position: relative;
+    height: 270px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#sign_in, #sign_up{
+    position: absolute;
+    width: 388px;
+    transition: transform 0.5s;
+    background-color: #f1faf4;
+    height: 270px;
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    /* backdrop-filter: blur(px); */
+}
+
+
+@media only screen and (min-width: 600px){
+    .sing_container, #sign_in, #sign_up{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .sing_container, #sign_in, #sign_up{
+        height: 350px;
+    }
+}
+
+#sign_in {
+    border-radius: 0 20px 8px 8px;
+}
+
+#sign_up{
+    border-radius: 20px 0 8px 8px;
+}
+
+@keyframes hide {
+    0%   {opacity: 1;}
+    25%  {opacity: 0.20;}
+    100% {opacity: 0;}
+}
+
+@keyframes show {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.80;}
+    100% {opacity: 1;}
+}
+
+
+#twt{
+    text-align: center;
+    color: #1DA1F2;
+    margin: 0;
+}
+
+#fb{
+    color: #4267B2;
+    margin: 0;
+}
+
+#google{
+    text-align: end;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+}

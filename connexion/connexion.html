@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javarcipt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta  charset="utf-8">
+        <link rel="stylesheet" href="./connexion.css">
+        <link rel="stylesheet" href="../icon/fontawesome-free-6.2.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="../icon/fontawesome-free-6.2.0-web/css/all.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <ul>
+                    <li><a href="../accueil.html"><i class="fa-solid fa-house"></i> Acceuil</a></li>
+                    <li><a href="./connexion.html"><i class="fa-solid fa-user"></i> Connexion</a></li>
+                    <li><a href=""><i class="fa-solid fa-circle-info"></i> A propos</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <div class="switchSign">
+                <div  id="sign_inBTN">Sign in</div>
+                <hr>
+                <div  id="sign_upBTN">Sign up</div>
+            </div>
+            <div class="sing_container">
+                <div id="sign_in">
+                    <form>
+                        <label>Pseudo :</label><input type="text" required><br>
+                        <label>Mots de passe :</label><input type="password"><br>
+                        <input type="button" value="Confirmer">
+                    </form>
+                </div>
+                <div id="sign_up">
+                    <form>
+                        <label>Nom :</label><input type="text" required><br>
+                        <label>Prénoms :</label><input type="text"><br>
+                        <label>Pseudo :</label><input type="text" required><br>
+                        <label>Email :</label><input type="mail" required><br>
+                        <label>Mots de passe :</label><input type="password" class="password"><br>
+                        <label>Entrer de nouveau votre mots de de passe :</label><input type="password" class="password"><br>
+                        <input type="checkbox" onclick="showOrHidePassword()">Show password<br>
+                        <input type="button" value="Enregistrer">
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script src="connexion.js"></script>
+</html>
